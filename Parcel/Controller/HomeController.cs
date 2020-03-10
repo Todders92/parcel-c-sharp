@@ -19,11 +19,7 @@ namespace Parcel.Controllers
     [HttpPost("/price")]
     public ActionResult Price(int weight, int height, int width, int length)
     {
-      ParcelObject myParcel = new ParcelObject();
-      myParcel.Weight = weight;
-      myParcel.Height = height; 
-      myParcel.Width = width;
-      myParcel.Length = length;
+      ParcelObject myParcel = new ParcelObject(weight, height, width, length);
       myParcel.GetVolume();
       myParcel.VolumePrice();
       myParcel.WeightPrice();

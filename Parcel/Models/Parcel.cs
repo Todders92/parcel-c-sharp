@@ -14,17 +14,17 @@ namespace Parcel.Models
     public int WeightCost { get; set; }
     public int Price { get; set; }
 
-    // public ParcelObject(int weight, int height, int width, int length)
-    // {
-    //   Weight = weight;
-    //   Height = height; 
-    //   Width = width;
-    //   Length = length;
-    //   VolumeCost = 0;
-    //   WeightCost = 0;
-    //   Volume = 0;
-    //   Price = 0;
-    // }
+    public ParcelObject(int weight, int height, int width, int length)
+    {
+      Weight = weight;
+      Height = height; 
+      Width = width;
+      Length = length;
+      VolumeCost = 0;
+      WeightCost = 0;
+      Volume = 0;
+      Price = 0;
+    }
     public void GetVolume()
     {
       Volume = Length * Width * Height;
